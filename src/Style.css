@@ -1,0 +1,238 @@
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+
+  textarea{
+    width: 100%;
+    height: 30vh;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #276DC6;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #276DC6;
+  }
+  
+  div {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding: 10px;
+  }
+
+  #container{
+      height: 100vh;
+  }
+  .section{
+    border: 1px solid black;
+  }
+  .sectionContainer{
+    display: inline-flex;
+    width: 100vw;
+    flex-direction: row;
+  }
+  .column {
+    float: left;
+    width: 40%;
+    padding: 0 10px;
+  }
+  .column2 {
+    float: left;
+    width: 56%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px; }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 950px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .column2 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .mainSec {
+      margin-top: 25px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(44, 44, 44, 0.158);
+    padding: 16px;
+    text-align: center;
+    background-color: #fdfdfd;
+  }
+.loader{
+  position: fixed;
+  height: 91.5%;
+  width: 91.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #276DC6;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.timeContainer{
+  border: #D3D3D3 1px solid;
+}
+
+#appt-time{
+  width: 110px;
+  height: 30px;
+  border: 2px solid #535353;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.count{
+  float: right;
+  font-size: 18px;
+  color: #20022e;
+}
+.count b{
+  color: #01b136;
+}
+.activeTab{
+background: #276DC6;
+justify-content: center;
+align-items: center;
+width: 100px;
+border-radius: 5px;
+text-align: center;
+}
+.activeTab span{
+  color: #fdfdfd;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.inActiveTab{
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  }
+.inActiveTab span{
+    color: #276DC6;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+.tabs{
+  position: absolute;
+  width: 200px;
+left: 0;
+right: 0;
+margin-left: auto;
+margin-right: auto;
+display: inline-flex;
+border: #20022e solid 0.5px;
+border-radius: 5px;
+cursor: pointer;
+}
+.manageTask{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.addTodoButton{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #276DC6;
+  border: 2px solid #fff;
+  height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.addTodoButton span{
+  color: #fff;
+  margin-left: 5px;
+}
+
+.pending{
+  color: #276DC6;
+}
+.done{
+  color: #01b136;
+}
+.taskBody{
+  width: 90%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+.taskBody div span {
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  text-align: left;
+  
+}
+.rightBody{
+  display: inline-flex;
+  align-items: center;
+}
+.rightBody span{
+  margin-right: 10px;
+  font-size: 10px;
+}
+.checkBox{
+  height: 25px;
+  width: 25px;
+}
+.taskUpdate{
+  text-align: start;
+  position: absolute; 
+    left: -999em;
+}
+
+.taskUpdate h4{
+  text-decoration: underline;
+}
