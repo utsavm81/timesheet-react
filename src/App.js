@@ -415,7 +415,7 @@ function App() {
             <div
               className='mainSec'
             >
-              <h2>Enter your attendance list 565445654</h2>
+              <h2>Enter your attendance list 22222222</h2>
               <textarea id="fname" name="firstname" placeholder="Paste your attendance list here...." />
               <input type="submit" onClick={calculateData} value="Calculate Time" />
             </div>
