@@ -51,7 +51,7 @@ function App() {
     }
 
     setLoader(true);
-    axios.post("http://192.168.1.171:5000/csv", { csvData }).then(res => {
+    axios.post("https://timesheet-node-nyn2.vercel.app/csv", { csvData }).then(res => {
       setLoader(false);
       if (!res.data?.result)
         toastr.error("Something went wrong! Try again")
@@ -122,7 +122,7 @@ function App() {
       else {
         let csvData = document.getElementById("fname").value;
         setLoader(true);
-        axios.post("https://time-calculator-node.herokuapp.com/csv", { csvData }).then(res => {
+        axios.post("https://timesheet-node-nyn2.vercel.app/csv", { csvData }).then(res => {
           if (!res.data?.result) {
             setLoader(false);
             toastr.error("Something went wrong! Try again")
