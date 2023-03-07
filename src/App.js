@@ -9,7 +9,7 @@ import moment from 'moment';
 import TimePicker from 'react-time-picker';
 import io from "socket.io-client";
 import Modal from 'react-modal';
-const ENDPOINT = 'https://time-calculator-node.herokuapp.com/';
+const ENDPOINT = 'https://timesheet-node-nyn2.vercel.app/';
 
 let socket;
 
@@ -415,7 +415,7 @@ function App() {
             <div
               className='mainSec'
             >
-              <h2>Enter your attendance list 22222222</h2>
+              <h2>Enter your attendance list</h2>
               <textarea id="fname" name="firstname" placeholder="Paste your attendance list here...." />
               <input type="submit" onClick={calculateData} value="Calculate Time" />
             </div>
