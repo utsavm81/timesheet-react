@@ -9,7 +9,7 @@ import moment from 'moment';
 import TimePicker from 'react-time-picker';
 import io from "socket.io-client";
 import Modal from 'react-modal';
-const ENDPOINT = 'https://time-calculator-node.herokuapp.com/';
+const ENDPOINT = 'https://node-timesheet.onrender.com/';
 
 let socket;
 
@@ -51,7 +51,7 @@ function App() {
     }
 
     setLoader(true);
-    axios.post("https://timesheet-node-nyn2.vercel.app/csv", { csvData }).then(res => {
+    axios.post("https://node-timesheet.onrender.com/csv", { csvData }).then(res => {
       setLoader(false);
       if (!res.data?.result)
         toastr.error("Something went wrong! Try again")
@@ -122,7 +122,7 @@ function App() {
       else {
         let csvData = document.getElementById("fname").value;
         setLoader(true);
-        axios.post("https://timesheet-node-nyn2.vercel.app/csv", { csvData }).then(res => {
+        axios.post("https://node-timesheet.onrender.com/csv", { csvData }).then(res => {
           if (!res.data?.result) {
             setLoader(false);
             toastr.error("Something went wrong! Try again")
